@@ -1,35 +1,40 @@
 {
-    "name": "M1naret/graphql-laravel",
-    "description": "Laravel wrapper for PHP GraphQL",
-    "keywords": ["framework", "lumen", "graphql", "react"],
-    "license": "MIT",
-    "type": "project",
-    "require": {
-        "php": ">=5.5.9",
-        "illuminate/support": "^5.5",
-        "webonyx/graphql-php": "~0.10.0"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "^5.5|~6.0"
-    },
-    "autoload": {
-        "psr-0": {
-            "M1naret\\GraphQL\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "classmap": [
-            "tests/"
-        ]
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "M1naret\\GraphQL\\GraphQLServiceProvider"
-            ],
-            "aliases": {
-                "GraphQL": "M1naret\\GraphQL\\Support\\Facades\\GraphQL"
-            }
-        }
+  "name": "M1naret/graphql-laravel",
+  "description": "Laravel wrapper for PHP GraphQL",
+  "keywords": [
+    "framework",
+    "lumen",
+    "graphql",
+    "react"
+  ],
+  "license": "MIT",
+  "type": "project",
+  "require": {
+    "php": ">=5.5.9",
+    "illuminate/support": "5.1.*|5.2.*|5.3.*|5.4.*|5.5.*|5.6.*",
+    "webonyx/graphql-php": "~0.10.2"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^5.5|~6.0"
+  },
+  "autoload": {
+    "psr-0": {
+      "M1naret\\GraphQL\\": "src/"
     }
+  },
+  "autoload-dev": {
+    "classmap": [
+      "tests/"
+    ]
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "M1naret\\GraphQL\\GraphQLServiceProvider"
+      ],
+      "aliases": {
+        "GraphQL": "M1naret\\GraphQL\\Support\\Facades\\GraphQL"
+      }
+    }
+  }
 }
