@@ -1,30 +1,7 @@
 {
-    "name": "rebing/graphql-laravel",
+    "name": "M1naret/graphql-laravel",
     "description": "Laravel wrapper for PHP GraphQL",
-    "keywords": ["framework", "laravel", "graphql", "react"],
-    "authors": [
-        {
-            "name": "Rebing OÜ",
-            "homepage": "http://www.rebing.ee",
-            "role": "Company"
-        },
-        {
-            "name": "Mikk Mihkel Nurges",
-            "email": "mikk.nurges@rebing.ee",
-            "role": "Developer"
-        },
-        {
-            "name": "Folklore",
-            "email": "info@atelierfolklore.ca",
-            "homepage": "http://atelierfolklore.ca"
-        },
-        {
-            "name": "David Mongeau-Petitpas",
-            "email": "dmp@atelierfolklore.ca",
-            "homepage": "http://mongo.ca",
-            "role": "Developer"
-        }
-    ],
+    "keywords": ["framework", "lumen", "graphql", "react"],
     "license": "MIT",
     "type": "project",
     "require": {
@@ -37,7 +14,7 @@
     },
     "autoload": {
         "psr-0": {
-            "Rebing\\GraphQL\\": "src/"
+            "M1naret\\GraphQL\\": "src/"
         }
     },
     "autoload-dev": {
@@ -48,10 +25,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Rebing\\GraphQL\\GraphQLServiceProvider"
+                "M1naret\\GraphQL\\GraphQLServiceProvider"
             ],
             "aliases": {
-                "GraphQL": "Rebing\\GraphQL\\Support\\Facades\\GraphQL"
+                "GraphQL": "M1naret\\GraphQL\\Support\\Facades\\GraphQL"
             }
         }
     }
