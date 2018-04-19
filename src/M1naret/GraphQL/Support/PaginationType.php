@@ -1,11 +1,11 @@
 <?php
 
-namespace Rebing\GraphQL\Support;
+namespace M1naret\GraphQL\Support;
 
 use GraphQL\Type\Definition\ObjectType;
 use GraphQL\Type\Definition\Type as GraphQLType;
 use Illuminate\Pagination\LengthAwarePaginator;
-use Rebing\GraphQL\Support\Facades\GraphQL;
+use M1naret\GraphQL\Support\Facades\GraphQL;
 
 class PaginationType extends ObjectType {
 

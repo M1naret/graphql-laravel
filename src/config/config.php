@@ -11,6 +11,11 @@ return [
     // The prefix for routes
     'prefix' => 'graphql',
 
+    /*
+     * The domain for routes
+     */
+    'domain' => null,
+
     // The routes to make GraphQL request. Either a string that will apply
     // to both query and mutation or an array containing the key 'query' and/or
     // 'mutation' with the according Route
@@ -37,11 +42,11 @@ return [
     // Example:
     //
     // 'controllers' => [
-    //     'query' => '\Rebing\GraphQL\GraphQLController@query',
-    //     'mutation' => '\Rebing\GraphQL\GraphQLController@mutation'
+    //     'query' => '\M1naret\GraphQL\GraphQLController@query',
+    //     'mutation' => '\M1naret\GraphQL\GraphQLController@mutation'
     // ]
     //
-    'controllers' => \Rebing\GraphQL\GraphQLController::class . '@query',
+    'controllers' => \M1naret\GraphQL\GraphQLController::class . '@query',
 
     // Any middleware for the graphql route group
     'middleware' => [],
@@ -122,7 +127,7 @@ return [
     //     'message' => '',
     //     'locations' => []
     // ]
-    'error_formatter' => ['\Rebing\GraphQL\GraphQL', 'formatError'],
+    'error_formatter' => ['\M1naret\GraphQL\GraphQL', 'formatError'],
 
     // You can set the key, which will be used to retrieve the dynamic variables
     'params_key'    => 'params',

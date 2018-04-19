@@ -1,11 +1,11 @@
 <?php
 
-namespace Rebing\GraphQL\Support;
+namespace M1naret\GraphQL\Support;
 
-use Rebing\GraphQL\Error\AuthorizationError;
+use M1naret\GraphQL\Error\AuthorizationError;
 use Validator;
 use Illuminate\Support\Fluent;
-use Rebing\GraphQL\Error\ValidationError;
+use M1naret\GraphQL\Error\ValidationError;
 
 class Field extends Fluent {
 

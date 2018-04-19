@@ -1,8 +1,8 @@
 <?php
 
-namespace Rebing\GraphQL\Type\User;
+namespace M1naret\GraphQL\Type\User;
 
-use Rebing\GraphQL\Support\Type as GraphQLType;
+use M1naret\GraphQL\Support\Type as GraphQLType;
 use GraphQL\Type\Definition\Type;
 use Models\UserProfile; // not included in this project
 use GraphQL\GraphQL;

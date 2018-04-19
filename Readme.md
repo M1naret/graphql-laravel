@@ -46,18 +46,18 @@ $ composer update
 
 **3-** Add the service provider to your `app/config/app.php` file
 ```php
-Rebing\GraphQL\GraphQLServiceProvider::class,
+M1naret\GraphQL\GraphQLServiceProvider::class,
 ```
 
 **4-** Add the facade to your `app/config/app.php` file
 ```php
-'GraphQL' => 'Rebing\GraphQL\Support\Facades\GraphQL',
+'GraphQL' => 'M1naret\GraphQL\Support\Facades\GraphQL',
 ```
 
 **5-** Publish the configuration file
 
 ```bash
-$ php artisan vendor:publish --provider="Rebing\GraphQL\GraphQLServiceProvider"
+$ php artisan vendor:publish --provider="M1naret\GraphQL\GraphQLServiceProvider"
 ```
 
 **6-** Review the configuration file
@@ -123,7 +123,7 @@ First you need to create a type. The Eloquent Model is only required, if specify
 	namespace App\GraphQL\Type;
 	
 	use GraphQL\Type\Definition\Type;
-	use Rebing\GraphQL\Support\Type as GraphQLType;
+	use M1naret\GraphQL\Support\Type as GraphQLType;
     
     class UserType extends GraphQLType {
         
@@ -188,7 +188,7 @@ Then you need to define a query that returns this type (or a list). You can also
 	
 	use GraphQL;
 	use GraphQL\Type\Definition\Type;
-	use Rebing\GraphQL\Support\Query;    
+	use M1naret\GraphQL\Support\Query;    
 	use App\User;
 	
 	class UsersQuery extends Query {
@@ -270,7 +270,7 @@ For example a mutation to update the password of a user. First you need to defin
 	
 	use GraphQL;
 	use GraphQL\Type\Definition\Type;
-	use Rebing\GraphQL\Support\Mutation;    
+	use M1naret\GraphQL\Support\Mutation;    
 	use App\User;
 	
 	class UpdateUserPasswordMutation extends Mutation {
@@ -352,7 +352,7 @@ When creating a mutation, you can add a method to define the validation rules th
 	
 	use GraphQL;
 	use GraphQL\Type\Definition\Type;
-	use Rebing\GraphQL\Support\Mutation;    
+	use M1naret\GraphQL\Support\Mutation;    
 	use App\User;
 	
 	class UpdateUserEmailMutation extends Mutation {

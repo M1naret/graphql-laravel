@@ -1,6 +1,6 @@
 <?php
 
-namespace Rebing\GraphQL\Support;
+namespace M1naret\GraphQL\Support;
 
 use Closure;
 use GraphQL\Error\InvariantViolation;

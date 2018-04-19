@@ -1,4 +1,4 @@
-<?php namespace Rebing\GraphQL\Support\Facades;
+<?php namespace M1naret\GraphQL\Support\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

@@ -1,9 +1,9 @@
 <?php
 
-namespace Rebing\GraphQL\Query\User;
+namespace M1naret\GraphQL\Query\User;
 
-use Rebing\GraphQL\Support\Query;
-use Rebing\GraphQL\Support\SelectFields;
+use M1naret\GraphQL\Support\Query;
+use M1naret\GraphQL\Support\SelectFields;
 use GraphQL\GraphQL;
 use GraphQL\Type\Definition\Type;
 use Models\User; // not included in this project

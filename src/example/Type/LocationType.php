@@ -1,9 +1,9 @@
 <?php
 
-namespace Rebing\GraphQL\Type\Location;
+namespace M1naret\GraphQL\Type\Location;
 
 use GraphQL\Type\Definition\Type;
-use Rebing\GraphQL\Support\Type as GraphQLType;
+use M1naret\GraphQL\Support\Type as GraphQLType;
 use Models\Location; // not included in this project
 
 class LocationType extends GraphQLType {

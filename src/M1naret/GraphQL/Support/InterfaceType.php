@@ -1,6 +1,6 @@
 <?php
 
-namespace Rebing\GraphQL\Support;
+namespace M1naret\GraphQL\Support;
 
 use GraphQL\Type\Definition\InterfaceType as BaseInterfaceType;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Rebing\GraphQL\Exception;
+namespace M1naret\GraphQL\Exception;
 
 class SchemaNotFound extends \Exception {
 

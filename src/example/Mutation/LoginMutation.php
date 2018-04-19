@@ -1,9 +1,9 @@
 <?php
 
 use GraphQL\GraphQL;
-use Rebing\GraphQL\Support\Mutation;
+use M1naret\GraphQL\Support\Mutation;
 use GraphQL\Type\Definition\Type;
-use Rebing\Services\Auth\UserLoginService; // not included in this project
+use M1naret\Services\Auth\UserLoginService; // not included in this project
 
 class LoginMutation extends Mutation {
 

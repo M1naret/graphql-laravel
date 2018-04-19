@@ -1,6 +1,6 @@
 <?php
 
-namespace Rebing\GraphQL\Error;
+namespace M1naret\GraphQL\Error;
 
 use GraphQL\Error\Error;
 

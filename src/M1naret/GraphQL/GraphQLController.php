@@ -1,7 +1,7 @@
-<?php namespace Rebing\GraphQL;
+<?php namespace M1naret\GraphQL;
 
 use Illuminate\Http\Request;
-use Illuminate\Routing\Controller;
+use Laravel\Lumen\Routing\Controller;
 
 class GraphQLController extends Controller {
 
@@ -9,7 +9,7 @@ class GraphQLController extends Controller {
     {
         // If there are multiple route params we can expect that there
         // will be a schema name that has to be built
-        if (count($request->route()->parameters) > 1) {
+        if (\count($request->route()->parameters) > 1) {
             $schema = implode('/', $request->route()->parameters);
         }
 
@@ -36,7 +36,7 @@ class GraphQLController extends Controller {
             $query = $batchItem['query'];
             $params = array_get($batchItem, $paramsKey);
 
-            if(is_string($params))
+            if(\is_string($params))
             {
                 $params = json_decode($params, true);
             }

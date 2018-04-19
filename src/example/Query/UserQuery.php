@@ -1,9 +1,9 @@
 <?php
 
 use GraphQL\Type\Definition\Type;
-use Rebing\GraphQL\Support\Query;
+use M1naret\GraphQL\Support\Query;
 use GraphQL\GraphQL;
-use Rebing\GraphQL\Support\SelectFields;
+use M1naret\GraphQL\Support\SelectFields;
 use Models\User; // not included in this project
 
 class UserQuery extends Query {

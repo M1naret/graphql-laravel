@@ -1,6 +1,6 @@
 <?php
 
-use Rebing\GraphQL\GraphQLServiceProvider;
+use M1naret\GraphQL\GraphQLServiceProvider;
 
 class TestCase extends Illuminate\Foundation\Testing\TestCase {
 

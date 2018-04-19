@@ -86,7 +86,7 @@ class UserType extends GraphQLType {
 or you can create a class that extends the abstract GraphQL Privacy class:
 
 ```php
-use Rebing\GraphQL\Support\Privacy;
+use M1naret\GraphQL\Support\Privacy;
 use Auth;
 
 class MePrivacy extends Privacy {
@@ -157,7 +157,7 @@ You can also define a field as a class if you want to reuse it in multiple types
 namespace App\GraphQL\Fields;
 	
 use GraphQL\Type\Definition\Type;
-use Rebing\GraphQL\Support\Field;
+use M1naret\GraphQL\Support\Field;
 
 class PictureField extends Field {
         
@@ -202,7 +202,7 @@ You can then use it in your type declaration
 namespace App\GraphQL\Type;
 
 use GraphQL\Type\Definition\Type;
-use Rebing\GraphQL\Support\Type as GraphQLType;
+use M1naret\GraphQL\Support\Type as GraphQLType;
 
 use App\GraphQL\Fields\PictureField;
 
@@ -236,7 +236,7 @@ class UserType extends GraphQLType {
 
 ### Eager loading relationships
 
-The third argument passed to a query's resolve method is an instance of `Rebing\GraphQL\Support\SelectFields` which you can use to retrieve keys from the request. The following is an example of using this information to eager load related Eloquent models.
+The third argument passed to a query's resolve method is an instance of `M1naret\GraphQL\Support\SelectFields` which you can use to retrieve keys from the request. The following is an example of using this information to eager load related Eloquent models.
 This way only the required fields will be queried from the database.
 
 Your Query would look like
@@ -247,8 +247,8 @@ Your Query would look like
 	use GraphQL;
 	use GraphQL\Type\Definition\Type;
 	use GraphQL\Type\Definition\ResolveInfo;
-	use Rebing\GraphQL\Support\SelectFields;
-	use Rebing\GraphQL\Support\Query;
+	use M1naret\GraphQL\Support\SelectFields;
+	use M1naret\GraphQL\Support\Query;
 	
 	use App\User;
 
@@ -293,9 +293,9 @@ If some fields are required for the relation to load or validation etc, then you
 
 namespace App\GraphQL\Type;
 
-use Rebing\GraphQL\Support\Facades\GraphQL;
+use M1naret\GraphQL\Support\Facades\GraphQL;
 use GraphQL\Type\Definition\Type;
-use Rebing\GraphQL\Support\Type as GraphQLType;
+use M1naret\GraphQL\Support\Type as GraphQLType;
 
 class UserType extends GraphQLType
 {
@@ -505,7 +505,7 @@ First create an Enum as an extension of the GraphQLType class:
 // app/GraphQL/Enums/EpisodeEnum.php
 namespace App\GraphQL\Enums;
 
-use Rebing\GraphQL\Support\Type as GraphQLType;
+use M1naret\GraphQL\Support\Type as GraphQLType;
 
 class EpisodeEnum extends GraphQLType {
 
